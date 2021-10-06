@@ -1,0 +1,114 @@
+@import "../../../../scss/variables";
+
+.steps {
+    position: relative;
+    background-color: #f6f6f6;
+    margin-top: 0;
+
+    .section__title {
+        margin-top: 0;
+        color: $dark-background;
+    }
+
+    &__arr {
+        width: calc(75% - 15px);
+        height: 117px;
+        position: relative;
+        padding-left: 15px;
+
+        @media (min-width: $lg) {
+            width: calc(20% - 15px);
+        }
+
+        .icon {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: translateX(20px);
+
+            @media (min-width: $lg) {
+                transform: translateX(30px);
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 61px;
+            height: 154px;
+            position: absolute;
+            right: -69px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &_1 {
+            z-index: 5;
+            .icon { background-image: url("/img/icon-steps-1.svg"); }
+            &::before { background-color: #312D48; }
+            &::after { background-image: url("/img/icon-steps-arr-1.svg"); }
+        }
+        &_2 {
+            z-index: 4;
+            .icon { background-image: url("/img/icon-steps-2.svg"); }
+            &::before { background-color: #4E3D71; }
+            &::after { background-image: url("/img/icon-steps-arr-2.svg"); }
+        }
+        &_3 {
+            z-index: 3;
+            .icon { background-image: url("/img/icon-steps-3.svg"); }
+            &::before { background-color: #8E67C0; }
+            &::after { background-image: url("/img/icon-steps-arr-3.svg"); }
+        }
+        &_4 {
+            z-index: 2;
+            .icon { background-image: url("/img/icon-steps-4.svg"); }
+            &::before { background-color: #B967C0; }
+            &::after { background-image: url("/img/icon-steps-arr-4.svg"); }
+        }
+        &_5 {
+            z-index: 1;
+            box-shadow: 60px 0 0 0 #ED867A;
+            .icon { background-image: url("/img/icon-steps-5.svg"); }
+            &::before { background-color: #ED867A; }
+        }
+    }
+
+    &__desc {
+        font-family: 'Mulish', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+
+        @media (min-width: $xl) {
+            margin-top: 30px;
+        }
+
+        span {
+            font-weight: 800;
+        }
+    }
+
+    &__figure {
+        position: absolute;
+        left: 50%;
+        top: 34px;
+        margin-left: 303px;
+        z-index: 0;
+    }
+}

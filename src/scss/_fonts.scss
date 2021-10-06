@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('../../src/font/Gilroy-Regular.woff2') format('woff2'),
+    url('../../src/font/Gilroy-Regular.woff') format('woff'),
+    url('../../src/font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('../../src/font/Gilroy-Medium.woff2') format('woff2'),
+    url('../../src/font/Gilroy-Medium.woff') format('woff'),
+    url('../../src/font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../../src/font/Gilroy-Bold.woff2') format('woff2'),
+    url('../../src/font/Gilroy-Bold.woff') format('woff'),
+    url('../../src/font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+//@font-face {
+//    font-family: 'Gilroy';
+//    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+//    url('../../src/Gilroy-Extrabold.woff2') format('woff2'),
+//    url('../../src/Gilroy-Extrabold.woff') format('woff'),
+//    url('../../src/Gilroy-Extrabold.ttf') format('truetype');
+//    font-weight: 800;
+//    font-style: normal;
+//}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Black'), local('Gilroy-Black'),
+    url('../../src/font/Gilroy-Black.woff2') format('woff2'),
+    url('../../src/font/Gilroy-Black.woff') format('woff'),
+    url('../../src/font/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

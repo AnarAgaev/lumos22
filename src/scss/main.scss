@@ -3,3 +3,13 @@
 @import 'mixins';
 @import 'fonts';
 @import 'default-tempate';
+
+// Include components styles
+@import "../pug/templates/footer/footer";
+@import "../pug/pages/index/banner/banner";
+@import "../pug/pages/index/program/program";
+@import "../pug/pages/index/participate/participate";
+@import "../pug/pages/index/steps/steps";
+@import "../pug/pages/index/changes/changes";
+@import "../pug/pages/index/author/author";
+@import "../pug/pages/index/cta/cta";

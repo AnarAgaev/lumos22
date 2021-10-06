@@ -1,0 +1,159 @@
+@import "../../../../scss/variables";
+
+.program {
+    @media (min-width: $xl) {
+        padding-top: 55px;
+    }
+
+    &__title {
+        color: $dark-background ;
+    }
+
+    &__day {
+        &-card {
+            padding-bottom: 30px;
+            background: $font-lite;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            margin-bottom: 60px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: $xl) {
+                margin-bottom: 95px;
+            }
+        }
+
+        &-date {
+            width: 100%;
+            height: 89px;
+            background: $accent-lite;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $font-dark;
+
+            @media (min-width: $xl) {
+                max-width: 284px;
+            }
+        }
+
+        &-title {
+            width: 100%;
+            min-height: 89px;
+            padding: 30px;
+            background-color: $dark-background;
+            color: $font-lite;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            text-transform: uppercase;
+
+            @media (min-width: $xl) {
+             max-width: 826px;
+            }
+        }
+
+        &-pic {
+            width: 100%;
+            padding-top: 38px;
+
+            @media (min-width: $xl) {
+                max-width: 284px;
+            }
+
+            img {
+                max-width: 100%;
+                display: block;
+            }
+        }
+
+        &-content {
+            width: 100%;
+            padding: 0 15px;
+
+            @media (min-width: $md) {
+                padding: 0 30px;
+            }
+
+            @media (min-width: $xl) {
+                max-width: 826px;
+                padding: 23px 40px 0;
+            }
+        }
+    }
+
+    &__list-caption {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 8px;
+    }
+}
+
+.list__star {
+    li {
+        position: relative;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 18px;
+        padding-left: 46px;
+        min-height: 30px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            background: url("/img/icon-list-star.svg") center no-repeat;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 18px;
+        }
+    }
+}
+
+.list__point {
+    margin-top: 24px;
+
+    li {
+        position: relative;
+        font-weight: normal;
+        line-height: 22px;
+        padding-left: 20px;
+        margin-bottom: 8px;
+        font-size: 16px;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background: $font-dark;
+            top: 6px;
+            left: 0;
+            border-radius: 50%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 18px;
+        }
+    }
+}

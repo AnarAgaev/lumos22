@@ -1,0 +1,364 @@
+@import "../../../../scss/variables";
+
+.banner {
+    background: url("/img/banner-background.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: $font-lite;
+    padding-top: 36px;
+    padding-bottom: 60px;
+
+    @media (min-width: $md) {
+        padding-bottom: 97px;
+    }
+
+    @media (min-width: $xl) {
+        padding-top: 27px;
+        padding-bottom: 69px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(50, 11, 97, 0.8);
+    }
+
+    &__caption {
+        &__pic {
+            width: 59px;
+
+            @media (min-width: $xl) {
+                width: 77px;
+                margin-right: 6px;
+            }
+        }
+
+        &__txt {
+            text-align: center;
+            padding: 0;
+            margin: 18px 0 35px;
+            max-width: 320px;
+            color: $font-lite;
+
+            @media (min-width: $md) {
+                max-width: 688px;
+                margin-top: 10px;
+                margin-bottom: 46px;
+            }
+
+            @media (min-width: $xl) {
+                margin: 0;
+                max-width: 837px;
+
+
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        padding: 0 0 26px;
+        margin: 0 0 27px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 70px;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $accent-lite;
+
+            @media (min-width: $xl) {
+                width: 83px;
+            }
+        }
+
+        @media (min-width: $md) {
+            padding-bottom: 37px;
+        }
+
+        @media (min-width: $xl) {
+            margin-top: 34px;
+            padding-bottom: 24px;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: $font-lite;
+
+            @media (max-width: $xsm - 1) {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            @media (min-width: $md) {
+                font-size: 36px;
+                line-height: 45px;
+            }
+
+            @media (min-width: $xl) {
+                font-size: 50px;
+                line-height: 62px;
+                margin: 0 6px;
+            }
+        }
+    }
+    
+    &__subtitle {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $font-lite;
+        max-width: 320px;
+        margin: 0 auto 38px;
+
+        @media (min-width: $md) {
+            max-width: 690px;
+            margin-bottom: 72px;
+        }
+
+        @media (min-width: $xl) {
+            max-width: 730px;
+            margin-bottom: 40px;
+        }
+
+        span {
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            color: $font-lite;
+        }
+    }
+
+    &__cards {
+        li {
+            position: relative;
+            display: block;
+            width: 300px;
+            min-height: 118px;
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            text-align: center;
+            padding: 25px;
+            margin-bottom: 50px;
+            font-size: 16px;
+            line-height: 19px;
+            color: $font-color;
+
+            @media (min-width: $xsm) and (max-width: $md - 1) {
+                width: 320px;
+            }
+
+            @media (min-width: $md) {
+                width: 269px;
+                min-height: 145px;
+                font-size: 18px;
+                line-height: 22px;
+                padding-left: 8px;
+                padding-right: 8px;
+                margin: 0 15px 57px;
+            }
+
+            @media (min-width: $xl) {
+                width: 285px;
+                min-height: 125px;
+                margin: 0 16px;
+                padding: 15px 18px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: $accent-lite url("/img/icon-star.svg") center center no-repeat;
+            }
+        }
+    }
+
+    &__date {
+        margin-top: 25px;
+
+        @media (min-width: $md) {
+            margin-top: 51px;
+        }
+
+        @media (min-width: $xl) {
+            margin-top: 24px;
+        }
+
+        &__pic {
+            margin-right: 13px;
+
+            @media (min-width: $md) {
+                margin-right: 18px;
+                width: 26px;
+            }
+        }
+
+        &__txt {
+            span {
+                color: $font-lite;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+
+                @media (min-width: $xl) {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+
+                &:first-child::after {
+                    content: "";
+                    width: 2px;
+                    height: 17px;
+                    background-color: $font-lite;
+                    display: inline-block;
+                    position: relative;
+                    color: $font-lite;
+                    margin-left: 7px;
+                    top: 2px;
+
+                    @media (min-width: $md) {
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 27px;
+
+        @media (min-width: $md) {
+            margin-top: 40px;
+        }
+
+        @media (min-width: $xl) {
+            margin-top: 33px;
+        }
+
+        &__label {
+            margin-bottom: 26px;
+
+            @media (min-width: $md) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__privacy {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: $font-lite;
+            margin-top: 8px;
+
+            @media (min-width: $md) {
+                margin-top: 25px;
+            }
+
+            @media (min-width: $xl) {
+                margin-top: 19px;
+            }
+        }
+
+        &__msg {
+            margin-top: 24px;
+
+            @media (min-width: $md) {
+                margin-top: 34px;
+            }
+
+            @media (min-width: $xl) {
+                margin-top: 29px;
+            }
+
+            .pic {
+                margin-right: 14px;
+
+                @media (min-width: $xl) {
+                    margin-right: 35px;
+                }
+            }
+
+            .txt {
+                font-size: 14px;
+                line-height: 17px;
+                color: $font-lite;
+                max-width: 250px;
+
+                @media (min-width: $md) {
+                    font-size: 16px;
+                    line-height: 19px;
+                    max-width: 437px;
+                }
+
+                @media (min-width: $xl) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &__fig-left {
+        position: absolute;
+        left: 50%;
+        top: 604px;
+        margin-left: -352px;
+        z-index: 0;
+
+        @media (min-width: $lg) and (max-width: $xl - 1) {
+            top: 650px;
+            margin-left: -550px;
+        }
+
+        @media (min-width: $xl) {
+            top: 492px;
+            margin-left: -556px;
+            width: 122px;
+        }
+    }
+
+    &__fig-right {
+        position: absolute;
+        left: 50%;
+        top: 604px;
+        margin-left: 398px;
+        z-index: 0;
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid $font-lite;
+        background: #e130e3 url("/img/icon-scroll.svg") center no-repeat;
+    }
+}

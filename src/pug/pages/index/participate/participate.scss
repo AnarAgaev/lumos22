@@ -1,0 +1,123 @@
+@import "../../../../scss/variables";
+
+.participate {
+    background-color: $font-dark;
+    margin-top: 0;
+
+    .title {
+        margin-top: 0;
+
+        &::after {
+            background-color: $font-lite;
+        }
+    }
+
+    &__list {
+        margin-top: 40px;
+    }
+    
+    &__card {
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+
+    &__promo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        background-color: $font-lite;
+        color: #292841;
+        padding-bottom: 20px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 47px;
+            height: 30px;
+            bottom: -17px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url("/img/icon-arr.svg") center no-repeat;
+        }
+    }
+
+    &__pic {
+        width: 100%;
+        height: 238px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__caption {
+        width: 100%;
+        min-height: 121px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 33px 10px 0;
+    }
+
+    &__desc {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 17px 10px 0;
+    }
+
+    &__paragraph {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+        color: $font-lite;
+        text-align: center;
+        margin-top: 21px;
+
+        @media (min-width: $md) {
+            font-size: 18px;
+        }
+    }
+}
+
+.list__check {
+    margin-top: 15px;
+
+    li {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $font-lite;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 45px;
+        min-height: 30px;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 31px;
+            height: 30px;
+            left: 0;
+            top: -3px;
+            background: url("/img/icon-check.svg") center no-repeat;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $md) {
+            font-size: 18px;
+            margin-bottom: 17px;
+        }
+    }
+
+    @media (min-width: $xl) {
+        margin-bottom: 0;
+    }
+}

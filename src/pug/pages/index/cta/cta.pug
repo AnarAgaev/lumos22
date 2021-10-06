@@ -1,0 +1,43 @@
+section.section.cta
+    .container
+        .row.justify-content-center
+            .col-md-8
+                .cta__title.d-flex.flex-column.align-items-center.align-items-xl-start
+                    span Пробудите свои
+                    | !{' '}
+                    span.font_accent сверхспособности
+
+                .cta__subtitle и ощутите первые результаты уже на онлайн-практикуме!
+
+                ul.cta__list
+                    li.d-flex.align-items-center.justify-content-start.flex-column.flex-xl-row
+                        img(src="/img/icon-reload.svg" alt="").d-block.mb-3.mt-2.mt-xl-0.mb-xl-0
+                        span Зарегистрируйтесь на онлайн-практикум 21-23 сентября 15:00 мск
+                    li.d-flex.align-items-center.justify-content-start.flex-column.flex-xl-row
+                        img(src="/img/icon-check-list.svg" alt="").d-block.mb-3.mt-2.mt-2.mt-xl-0.mb-xl-0
+                        span Получите тест-диагностику ваших сверхспособностей
+                    li.d-flex.align-items-center.justify-content-start.flex-column.flex-xl-row
+                        img(src="/img/icon-clock.svg" alt="").d-block.mb-3.mt-2.mt-2.mt-xl-0.mb-xl-0
+                        span.pr-1 Пройдите его за 2 минуты и узнайте, есть ли у вас врожденный дар, и как его активировать
+                    li
+                        span Количество мест ограничено!
+
+            .col-md-6.col-xl-4
+                form.cta__form(action="/" method="GET")
+                    h4.cta__form__caption
+                        | Оставьте свои данные,
+                        br
+                        | чтобы зарегистрироваться
+                        br
+                        | на онлайн-практикум
+                    label
+                        input.input(type="text" placeholder="Введите Ваше имя:")
+                    label
+                        input.input(type="text" placeholder="Ваш e-mail:")
+                    input.input.input_button(type="submit" value="Записаться")
+                    span.cta__form__privacy
+                        | Согласен получать сообщения
+                        br
+                        | от Мары Борониной
+
+
